@@ -1,0 +1,7 @@
+{
+  "name": "AdCreative Pro: Agency Strategist",
+  "description": "A high-end advertising agency platform that transforms raw user experiences into professional, high-converting ad systems including storyboards, visual direction, and strategic CTAs.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdCreative Pro | Google Cloud Partner Style</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --google-blue: #1A73E8;
+            --google-blue-hover: #1558D6;
+            --text-primary: #202124;
+            --text-secondary: #5F6368;
+            --bg-light: #F8F9FA;
+            --border-color: #E0E0E0;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #FFFFFF;
+            color: var(--text-primary);
+            scroll-behavior: smooth;
+        }
+        .material-card {
+            background: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
+            transition: box-shadow 0.2s ease-in-out;
+        }
+        .material-card:hover {
+            box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+        }
+        .btn-primary {
+            background-color: var(--google-blue);
+            color: #FFFFFF;
+            font-weight: 500;
+            border-radius: 4px;
+            transition: background-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+        }
+        .btn-primary:hover {
+            background-color: var(--google-blue-hover);
+            box-shadow: 0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
+        }
+        .btn-outline {
+            border: 1px solid var(--border-color);
+            color: var(--google-blue);
+            background: transparent;
+            font-weight: 500;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .btn-outline:hover {
+            background-color: rgba(26, 115, 232, 0.04);
+            border-color: var(--google-blue);
+        }
+        .input-google {
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 12px 16px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .input-google:focus {
+            border-color: var(--google-blue);
+            box-shadow: inset 0 0 0 1px var(--google-blue);
+            outline: none;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "jspdf": "https://esm.sh/jspdf@^2.5.1",
+    "jspdf-autotable": "https://esm.sh/jspdf-autotable@^3.8.2"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
