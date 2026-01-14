@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { CampaignProvider, useCampaign } from './context/CampaignContext';
 import InputForm from './components/InputForm';
 import AdStrategyDisplay from './components/AdStrategyDisplay';
@@ -29,6 +30,7 @@ const AppContent: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white selection:bg-blue-100">
+      <SpeedInsights />
       <Navbar />
 
       {!strategy ? (
